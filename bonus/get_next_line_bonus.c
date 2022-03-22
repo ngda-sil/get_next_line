@@ -97,7 +97,7 @@ char	*get_next_line(int fd)
 	static char	*buf_copy[OPEN_MAX];
 	char		*line;
 
-	if (fd == -1 || fd > 100 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buf_copy[fd] = read_to_buf_copy(fd, buf_copy[fd]);
 	if (!buf_copy[fd])
