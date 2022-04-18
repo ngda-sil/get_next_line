@@ -6,7 +6,7 @@
 /*   By: ngda-sil <ngda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/11 09:17:35 by ngda-sil          #+#    #+#             */
-/*   Updated: 2021/12/11 14:16:54 by ngda-sil         ###   ########.fr       */
+/*   Updated: 2022/04/18 19:00:44 by ngda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,9 +84,7 @@ char	*new_buf_copy(char *buf_copy)
 		return (NULL);
 	i++;
 	while (buf_copy[i])
-	{
 		new_buf[j++] = buf_copy[i++];
-	}
 	new_buf[j] = '\0';
 	free(buf_copy);
 	return (new_buf);
